@@ -123,6 +123,26 @@ nav a{
     gap:20px;
 }
 
+.integrantes{
+    background: rgb(0, 0, 0);
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.integrantes h1{
+    color: #1b5e20;
+    margin-bottom: 20px;
+}
+
+.integrantes p{
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
 .beneficios div{
     background:white;
     padding:20px;
@@ -147,4 +167,37 @@ footer{
     border-radius:50%;
     cursor:pointer;
     display:none;
+}
+
+#plan-trabajo{
+    text-align:center;
+}
+
+.descripcion-plan{
+    max-width:900px;
+    margin:0 auto 40px;
+    line-height:1.8;
+}
+
+.plan-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:320px;
+    transition:all .3s ease;
+}
+
+.plan-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.plan-card h3{
+    color:#1b5e20;
+    margin:15px 0;
+}
+
+.plan-card p{
+    flex-grow:1;
+    line-height:1.6;
 }
