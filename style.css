@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7f3;
+    color:#333;
+}
+
+header{
+    background:#1b5e20;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ),
+    url("https://images.unsplash.com/photo-1532996122724-e3c354a0b15b");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#4caf50;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.contenedor h2{
+    color:#1b5e20;
+    margin-bottom:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.card i{
+    font-size:40px;
+    color:#4caf50;
+    margin-bottom:15px;
+}
+
+.problema{
+    background:white;
+    margin:15px 0;
+    padding:20px;
+    border-left:5px solid #4caf50;
+}
+
+.beneficios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.beneficios div{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+#btnTop{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    border:none;
+    background:#4caf50;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    cursor:pointer;
+    display:none;
+}
